@@ -25,12 +25,29 @@ header{
 		display:flex;
 		justify-content:center;
 		align-items:center;
-		gap:30px;
+		padding:60px 40px;
+		gap:40px;
 }
 header img{
 		width:100%;
 		max-width:250px;
 		height:auto;
+}
+button{
+		background:blue;
+		color:white;
+		padding:10px 20px;
+		boder:none;
+		border-radius:8px;
+		cursor:pointer;
+		transition:0.3s;
+}
+button:hover{
+	background:darkblue;
+}
+p{
+	color:grey;
+	font-size:20px;
 }
 	
   
