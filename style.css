@@ -2,7 +2,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:sans-sarif;
+  font-family:sans-serif;
 }
 body{
 	background:lightcyan;
@@ -14,7 +14,7 @@ nav{
 	background:blue;
 	padding:10px;
 	font-size:18px;
-	text-align:center;
+
 }
 nav a{
     color:white;
@@ -24,6 +24,14 @@ nav a{
 header{
 		display:flex;
 		justify-content:center;
+		align-items:center;
+		gap:30px;
 }
+header img{
+		width:100%;
+		max-width:250px;
+		height:auto;
+}
+	
   
   
