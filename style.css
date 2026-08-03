@@ -21,26 +21,47 @@ nav a{
 	text-decoration:none;
 	font-weight:bold;
 }
+.menu{
+    display:none;
+}
+@media(max-width:600px){
+
+    header{
+        width:100%;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    nav a{
+        display:none;
+    }
+
+    .menu{
+        display:block;
+    }
+}
+    
 header{
-		display:flex;
-		justify-content:center;
-		align-items:center;
-		padding:60px 40px;
-		gap:40px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:60px 40px;
+	gap:40px;
 }
 header img{
-		width:100%;
-		max-width:250px;
-		height:auto;
+	width:100%;
+	max-width:250px;
+	height:auto;
 }
 button{
-		background:blue;
-		color:white;
-		padding:10px 20px;
-		boder:none;
-		border-radius:8px;
-		cursor:pointer;
-		transition:0.3s;
+	background-color:blue;
+	color:white;
+	padding:10px 20px;
+	border:none;
+	border-radius:8px;
+	cursor:pointer;
+	transition:0.3s
 }
 button:hover{
 	background:darkblue;
@@ -48,9 +69,6 @@ button:hover{
 p{
 	color:grey;
 	font-size:20px;
-}
-.menu{
-	display:none;
 }
 	
   
