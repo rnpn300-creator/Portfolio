@@ -70,6 +70,71 @@ p{
 	color:grey;
 	font-size:20px;
 }
+section h3{
+	text-align:center;
+	background:green;
+	color:yellow;
+	font-weight:bold;
+	font-size:20px;
+	padding:5px;	
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card {
+    width: 90%;
+    max-width: 250px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    justify-self: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.card p {
+	color:white;
+}
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.project-card {
+    width: 90%;
+    max-width: 300px;
+    justify-self: center;
+    background-color: maroon;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.project-card p{
+	color:white;
+}
+@media (max-width: 600px) {
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 	
   
   
