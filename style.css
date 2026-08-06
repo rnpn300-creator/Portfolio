@@ -137,7 +137,7 @@ section h3{
 }
 .contact form{
 	display:flex;
-	flex-direction:colunn;
+	flex-direction:column;
 	gap:15px;
 
 }
@@ -146,7 +146,36 @@ section h3{
 	width:100%;
 	padding:10px;
 	border-radius:8px;
-	boder:none;
+	border: 1px solid grey;
+	box-sizing:border-box;
+		
+}
+
+.contact button{
+	background-color:blue;
+	color:white;
+	padding: 10px 20px;
+	border:none;
+	border-radius:8px;
+	cursor:pointer;
+	transition:0.3s;
+}
+.contact button:hover{
+	background-color:darkblue;
+}
+.contact form{
+	width:90%;
+	max-width:500px;
+	margin:auto;
+}
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+	
+}
+.contact h2 {
+    background-color: green;
+    color: yellow;
 }
 	
   
