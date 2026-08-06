@@ -135,6 +135,19 @@ section h3{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+.contact form{
+	display:flex;
+	flex-direction:colunn;
+	gap:15px;
+
+}
+.contact input,
+.contact textarea{
+	width:100%;
+	padding:10px;
+	border-radius:8px;
+	boder:none;
+}
 	
   
   
