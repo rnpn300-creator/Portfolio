@@ -135,56 +135,47 @@ section h3{
         grid-template-columns: repeat(1, 1fr);
     }
 }
-.contact {
-    padding: 40px;
-    text-align: center;
-}
+.contact form{
+	display:flex;
+	flex-direction:column;
+	gap:15px;
 
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 90%;
-    max-width: 500px;
-    margin: auto;
 }
-
 .contact input,
-.contact textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid grey;
-    box-sizing: border-box;
+.contact textarea{
+	width:100%;
+	padding:10px;
+	border-radius:8px;
+	border: 1px solid grey;
+	box-sizing:border-box;
+		
 }
 
-.contact textarea {
-    min-height: 100px;
-    resize: vertical;
+.contact button{
+	background-color:blue;
+	color:white;
+	padding: 10px 20px;
+	border:none;
+	border-radius:8px;
+	cursor:pointer;
+	transition:0.3s;
 }
-
-.contact button {
-    background-color: blue;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contact button:hover {
-    background-color: darkblue;
+.contact button:hover{
+	background-color:darkblue;
 }
 .contact form{
 	width:90%;
 	max-width:500px;
 	margin:auto;
 }
+.contact {
+    padding: 40px 0;
+    text-align: center;
+
+	
+}
 .contact h2 {
     background-color: green;
     color: yellow;
 
 }
-
-
