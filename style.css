@@ -8,9 +8,8 @@ body{
 	background:lightcyan;
 }
 nav{
-  display:flex;
-	justify-content:flex-end;
-	gap:20px;	
+  	display:flex;
+	justify-content:flex-end;	
 	background:blue;
 	padding:10px;
 	font-size:18px;
@@ -37,9 +36,14 @@ nav a{
         text-align:center;
     }
 
-   .nav-links{
+    .nav-links{
         display:none;
          flex-direction:column;
+	background-color:blue;
+	width:100%;
+	text-align:center;
+	gap:15px;
+	padding:15px;
     }
 
     .menu{
@@ -77,11 +81,11 @@ p{
 }
 section h3{
 	text-align:center;
-	background:green;
+	background:black;
 	color:yellow;
 	font-weight:bold;
 	font-size:20px;
-	padding:5px;	
+	padding:10px;	
 }
 .skills-container {
     display: grid;
@@ -143,7 +147,7 @@ section h3{
 .contact form{
 	display:flex;
 	flex-direction:column;
-	gap:15px;
+	gap:10px;
 
 }
 .contact input,
@@ -156,31 +160,21 @@ section h3{
 		
 }
 
-.contact button{
-	background-color:blue;
-	color:white;
-	padding: 10px 20px;
-	border:none;
-	border-radius:8px;
-	cursor:pointer;
-	transition:0.3s;
-}
-.contact button:hover{
-	background-color:darkblue;
-}
+
 .contact form{
 	width:90%;
 	max-width:500px;
 	margin:auto;
 }
 .contact {
-    padding: 40px 0;
-    text-align: center;
-
-	
+    padding: 10px 0;
+    text-align: center;	
 }
-.contact h2 {
-    background-color: green;
-    color: yellow;
-
+.projects {
+    padding: 10px 0;
+    text-align: center;	
+}
+.skills {
+    padding: 10px 0;
+    text-align: center;	
 }
