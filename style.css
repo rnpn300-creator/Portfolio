@@ -1,3 +1,6 @@
+html{
+  scroll-behavior:smooth;
+}
 *{
   margin:0;
   padding:0;
@@ -62,6 +65,7 @@ header img{
 	width:100%;
 	max-width:250px;
 	height:auto;
+	border-radius:250px;
 }
 button{
 	background-color:blue;
@@ -177,4 +181,14 @@ section h3{
 .skills {
     padding: 10px 0;
     text-align: center;	
+}
+.about{
+	padding:40px 0px;
+	text-align:center;
+	background-color: white;
+}
+.about p{
+	max-width:600px;
+	margin:20px auto;
+	line-height:1.6;
 }
