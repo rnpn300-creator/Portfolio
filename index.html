@@ -2,29 +2,35 @@
 <html>
   <head>
     <title>My Site</title>
-    <link rel="stylesheet" href="style.css"> 
+
   </head>
+
   <body>
     <nav>
-		<div class="nav-links">
-      <a href="#">Home</a>
-       <a href="#">About</a>
-       <a href="#">Skills</a>
-       <a href="#">projects</a>
-       <a href="#">Contact</a>
+ <div class="nav-links">
+       <a href="#home">Home</a>
+       <a href="#about">About</a>
+       <a href="#skills">Skills</a>
+       <a href="#projects">projects</a>
+       <a href="#contact">Contact</a>
         <a href="#">Login</a>
-		</div>
-      <button class="menu">☰</button>
+</div>
+<button class="menu" id="menuBtn">☰</button>
     </nav>
-    <header>
+    <header id="home">
       <img src="very nice.jpg" alt="Profile">
-      <div>
-      <h2>Mr. Debnath</h2>
+<div>     
+ <h2>Mr. Debnath</h2>
        <p>Front-End-Developer</p>
        <button>Contact Me</button>
-        </div>
+</div>
     </header>
-    <section class="skills">
+<section class="about" id="about">
+<h3>About The Owner</h3>
+<p>I am Learning Front-End Development and building<br>
+responsive websites using HTML,CSS and JavaScript</p>
+</section>
+<section class="skills" id="skills">
   <h3>MY SKILLS</h3>
   <div class="skills-container">
 	<div class="card">
@@ -38,9 +44,12 @@
 		<p>Learning</p></div>
 </div>
 </section>
-<section class="projects">
+<section class="projects" id="projects">
+
     <h3>My Projects</h3>
+
     <div class="project-container">
+
         <div class="project-card">
             <h2>🖥 Portfolio Website</h2>
             <p>My Personal portfolio website</p>
@@ -52,21 +61,24 @@
             <p>You can do calculation here</p>
             <button>View Project</button>
         </div>
+
         <div class="project-card">
             <h2>🎁 Landing Page</h2>
-	<p>Your can also create </p>
+	<p>You can also create </p>
             <button>View Project</button>
         </div>
+
     </div>
+
 </section>
-	  <section class="contact">
-    <h2>contact Me</h2>
+<section class="contact" id="contact">
+    <h3>Contact Me</h3>
 
     <form>
         <label>Name</label>
         <input type="text" placeholder="Type">
 
-        <label>E-mail</label>
+        <label>Email</label>
         <input type="email">
 
         <label>Message</label>
@@ -75,7 +87,8 @@
         <button type="submit">Send Message</button>
     </form>
 </section>
-	   <script>
+	
+   <script>
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.querySelector(".nav-links");
 
@@ -86,7 +99,8 @@ menuBtn.addEventListener("click", function() {
     } else {
         navLinks.style.display = "flex";
     }
-menuBtn.textContent = navLinks.style.display === "flex" ? "✕" : "☰";
+ menuBtn.textContent = navLinks.style.display === "flex" ? "✕" : "☰";
+
 });
 </script>
   </body>
