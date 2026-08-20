@@ -110,6 +110,11 @@ section h3{
     transition: 0.3s;
     cursor: pointer;
     justify-self: center;
+
+    display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
 }
 
 .card:hover {
