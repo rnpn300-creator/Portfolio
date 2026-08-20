@@ -139,6 +139,11 @@ section h3{
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+	transition:0.3s;
+    box-shadow:0 0 10px black;
+ 
+    display:flex;
+    flex-direction:column;
 }
 .project-card p{
 	color:white;
