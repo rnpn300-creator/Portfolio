@@ -23,9 +23,13 @@ nav{
 	gap:20px;
 }
 nav a{
-    color:white;
+                 color:white;
 	text-decoration:none;
 	font-weight:bold;
+	transition:0.3s;
+}
+nav a:hover{
+   color:yellow;
 }
 .menu{
     display:none;
@@ -60,12 +64,19 @@ header{
 	align-items:center;
 	padding:60px 40px;
 	gap:40px;
+ 	background-color:white;
+}
+header h2{
+	margin-bottom:10px;
+}
+header p{
+	margin-bottom:20px;
 }
 header img{
 	width:100%;
 	max-width:250px;
 	height:auto;
-	border-radius:250px;
+	border-radius:50%;
 }
 button{
 	background-color:blue;
@@ -78,6 +89,7 @@ button{
 }
 button:hover{
 	background:darkblue;
+	transform: translateY(-3px);
 }
 p{
 	color:grey;
@@ -95,6 +107,7 @@ section h3{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    margin-top:20px;
 }
 
 .card {
@@ -111,10 +124,10 @@ section h3{
     cursor: pointer;
     justify-self: center;
 
-    display:flex;
-	flex-direction:column;
-	justify-content:center;
-	align-items:center;
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+    align-items:center;
 }
 
 .card:hover {
@@ -133,6 +146,7 @@ section h3{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+     margin-top:20px;
 }
 
 .project-card {
@@ -144,12 +158,15 @@ section h3{
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-	transition:0.3s;
+    transition:0.3s;
     box-shadow:0 0 10px black;
  
     display:flex;
     flex-direction:column;
-	justity-content:space-between;
+    justify-content:space-between;
+}
+.project-card:hover{
+  transform:translateY(-10px);
 }
 .project-card p{
 	color:white;
@@ -158,6 +175,9 @@ section h3{
     .project-container {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+.project-card button {
+    margin-top: 15px;
 }
 .contact form{
 	display:flex;
@@ -172,7 +192,12 @@ section h3{
 	border-radius:8px;
 	border: 1px solid grey;
 	box-sizing:border-box;
+	outline:20 solid blue;
 		
+}
+.contact input:focus,
+.contact textarea:focus{
+  outline: 2px solid blue;
 }
 
 
@@ -180,17 +205,23 @@ section h3{
 	width:90%;
 	max-width:500px;
 	margin:auto;
+	margin-top:20px;
+}
+.contact label{
+	font-weight:bold;
+	text-align:left;
 }
 .contact {
     padding: 10px 0;
     text-align: center;	
 }
 .projects {
-    padding: 10px 0;
-    text-align: center;	
+    padding: 20px 0;
+    text-align: center;
+     padding-bottom:30px;	
 }
 .skills {
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;	
 }
 .about{
@@ -203,3 +234,31 @@ section h3{
 	margin:20px auto;
 	line-height:1.6;
 }
+
+.contact-btn,
+.project-btn{
+  display:inline-block;
+  background-color:blue;
+  color:white;
+  padding:10px 20px;
+  text-decoration:none;
+  border-radius:8px;
+   transition:0.3s;
+}
+.contact-btn:hover
+.project-btn:hover{
+   background-color:darkblue;
+   transform:translateY(-3px);
+}
+
+
+
+
+
+
+   
+
+
+	
+
+
