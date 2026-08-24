@@ -1,3 +1,8 @@
+:root{
+	--main-blue:blue;
+	--main-yellow:yellow;
+	--main-white:white;
+}
 html{
   scroll-behavior:smooth;
 }
@@ -79,7 +84,7 @@ header img{
 	border-radius:50%;
 }
 button{
-	background-color:blue;
+	background-color:var(--main-blue);
 	color:white;
 	padding:10px 20px;
 	border:none;
@@ -113,7 +118,7 @@ section h3{
 .card {
     width: 90%;
     max-width: 250px;
-    background-color: blue;
+    background-color: var(--main-blue);
     color: white;
     padding: 10px;
     border-radius: 10px;
@@ -131,7 +136,7 @@ section h3{
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.02);
 }
 
 @media (max-width: 600px) {
@@ -166,7 +171,7 @@ section h3{
     justify-content:space-between;
 }
 .project-card:hover{
-  transform:translateY(-10px);
+  transform:translateY(-10px) scale(1.02);
 }
 .project-card p{
 	color:white;
