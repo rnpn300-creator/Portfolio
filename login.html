@@ -9,7 +9,7 @@
 <div class="login-container">
     <h1>Login</h1>
 
-    <form>
+    <form id="loginForm>
         <label for="username">Username</label>
         <input type="text" id="username" name="username">
 
@@ -22,10 +22,29 @@
 
         <button type="submit">Login</button>
     </form>
-
+        <p id="loginMessage">
     <br>
 
     <a href="index.html">Back to Home</a>
 </div>
+    <script>
+    const loginForm = document.getElementById("loginForm");
+    const loginMessage = document.getElementById("loginMessage");
+
+    loginForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (username === "admin" && password === "1234") {
+            loginMessage.textContent = "Login successful! 🎉";
+            loginMessage.style.color = "green";
+        } else {
+            loginMessage.textContent = "Wrong username or password! ❌";
+            loginMessage.style.color = "red";
+        }
+    });
+</script>
 </body>
 </html>
