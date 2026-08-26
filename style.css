@@ -255,16 +255,15 @@ section h3{
    background-color:darkblue;
    transform:translateY(-3px);
 }
-.loign-container{
-	width:90%;
-	max-width:400ox;
-	margin:60px auto;
-	background-color:white;
-	padding:25px;
-	border-radius:15px;
-	box-shadow:0 0 15px black;
-	text-align:center;
-
+.login-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+    text-align: center;
 }
 
 
