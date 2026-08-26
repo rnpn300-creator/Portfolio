@@ -198,7 +198,7 @@ section h3{
 	border-radius:8px;
 	border: 1px solid grey;
 	box-sizing:border-box;
-	outline: 2px solid blue;
+	
 		
 }
 .contact input:focus,
@@ -255,6 +255,16 @@ section h3{
 .project-btn:hover{
    background-color:darkblue;
    transform:translateY(-3px);
+}
+.login-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+    text-align: center;
 }
 
 
