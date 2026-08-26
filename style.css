@@ -191,13 +191,14 @@ section h3{
 
 }
 .contact input,
-.contact textarea{
+.contact textarea,
+.login-container input{
 	width:100%;
 	padding:10px;
 	border-radius:8px;
 	border: 1px solid grey;
 	box-sizing:border-box;
-	outline:20 solid blue;
+	outline: 2px solid blue;
 		
 }
 .contact input:focus,
@@ -255,7 +256,7 @@ section h3{
    background-color:darkblue;
    transform:translateY(-3px);
 }
-.login-container {
+//.login-container {
     width: 90%;
     max-width: 400px;
     margin: 60px auto;
@@ -264,7 +265,7 @@ section h3{
     border-radius: 15px;
     box-shadow: 0 0 15px black;
     text-align: center;
-}
+}//
 
 
 
