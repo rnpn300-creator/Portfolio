@@ -266,6 +266,13 @@ section h3{
     box-shadow: 0 0 15px black;
     text-align: center;
 }
+.success{
+	color:green;
+}
+.error{
+	color:red;
+
+}
 
 
 
