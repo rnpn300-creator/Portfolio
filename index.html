@@ -102,6 +102,13 @@ menuBtn.addEventListener("click", function() {
  menuBtn.textContent = navLinks.style.display === "flex" ? "✕" : "☰";
 
 });
+	   const topBtn=document.getElementById("topBtn");
+	   topBtn.addEvenLitstener("click",function(){
+		   window.scrollTo({
+			   top:0,
+			   behaviour:"smooth"
+		   });
+	   });
 </script>
 	  <button id="topBtn">⬆️</button>
   </body>
