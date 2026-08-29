@@ -88,7 +88,9 @@ responsive websites using HTML,CSS and JavaScript</p>
     </form>
 </section>
 	
-   <script>
+  <button id="topBtn">⬆️</button>
+
+<script>
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.querySelector(".nav-links");
 
@@ -99,19 +101,23 @@ menuBtn.addEventListener("click", function() {
     } else {
         navLinks.style.display = "flex";
     }
- menuBtn.textContent = navLinks.style.display === "flex" ? "✕" : "☰";
+
+    menuBtn.textContent = navLinks.style.display === "flex" ? "✕" : "☰";
 
 });
-	  const topBtn = document.getElementById("topBtn");
 
-	topBtn.addEventListener("click", function() {
+const topBtn = document.getElementById("topBtn");
+
+topBtn.addEventListener("click", function() {
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
 });
 </script>
-	  <button id="topBtn">⬆️</button>
+
+</body>
+</html>
   </body>
 </html>
   
